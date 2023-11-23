@@ -301,6 +301,13 @@ textarea {
 
 @media screen and (max-width: 540px) {
     .fs-64 {
+        font-size: var(--fs-32);
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .fs-64 {
         font-size: var(--fs-24);
     }
 
