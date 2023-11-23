@@ -292,7 +292,7 @@ select {
     min-width: 206px;
 }
 
-.reg .pw input,
+.reg input,
 .reg textarea {
     width: 311px;
 }
@@ -411,6 +411,21 @@ select {
     }
 }
 
+@media screen and (max-width: 563px) {
+    form {
+        text-align: center;
+    }
+
+    form label {
+        text-align: right;
+    }
+
+    label {
+        width: 290px !important;
+        min-width: inherit !important;
+    }
+}
+
 @media screen and (max-width: 540px) {
     .fs-64 {
         font-size: var(--fs-32);
@@ -462,8 +477,8 @@ select {
 @media screen and (min-width: 1440px) {
 
 
-    .pw input,
-    textarea {
+    .info .pw input,
+    .info textarea {
         width: 48%;
     }
 }
