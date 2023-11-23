@@ -428,6 +428,8 @@ select {
     label {
         width: 290px !important;
         min-width: inherit !important;
+        margin-bottom: var(--space-12) !important;
+        margin-left: 0 !important;
     }
 }
 
