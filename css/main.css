@@ -1,0 +1,337 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: aban;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/Aban.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: bkoodak;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/BKoodakBold_0.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: btitr;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/BTitrBold_0.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: kaghaz;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/KaghazAlefBold.woff2) format("woff2");
+    font-display: swap
+}
+
+
+:root {
+    --primary-color: #02364e;
+    --secondary-color: #ffe9b5;
+    --light: #ffffff;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-900: 900;
+    --fs-16: 16px;
+    --fs-24: 24px;
+    --fs-32: 32px;
+    --fs-40: 40px;
+    --fs-64: 64px;
+    --fs-72: 72px;
+    --bd-radius-16: 16px;
+    --mb-4: 4px;
+    --mb-8: 8px;
+    --mb-16: 16px;
+    --mb-12: 12px;
+    --mb-24: 24px;
+    --mb-32: 32px;
+    --mb-40: 40px;
+    --mb-64: 64px;
+    --mb-92: 92px;
+    --ml-12: 12px;
+}
+
+body {
+    background-image: url("../img/bg.svg");
+    direction: rtl;
+    max-width: 1440px;
+    padding-inline: 32px;
+    margin-inline: auto;
+}
+
+.color-light {
+    color: var(--light);
+}
+
+.f-kaghaz {
+    font-family: kaghaz;
+}
+
+.f-btitr {
+    font-family: btitr;
+}
+
+.f-bkoodak {
+    font-family: bkoodak;
+}
+
+.fw600 {
+    font-weight: var(--fw-600);
+}
+
+.fw700 {
+    font-weight: var(--fw-700);
+}
+
+.fw900 {
+    font-weight: var(--fw-900);
+}
+
+.fs-16 {
+    font-size: var(--fs-16);
+}
+
+.fs-24 {
+    font-size: var(--fs-24);
+}
+
+.fs-32 {
+    font-size: var(--fs-32);
+}
+
+.fs-40 {
+    font-size: var(--fs-40);
+}
+
+.fs-64 {
+    font-size: var(--fs-64);
+}
+
+.fs-72 {
+    font-size: var(--fs-72);
+}
+
+.bdr-40 {
+    border-radius: var(--bd-radius-40);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.color-p {
+    color: var(--primary-color);
+}
+
+.bg-color-p {
+    background-color: var(--primary-color);
+}
+
+.mb-4 {
+    margin-bottom: var(--mb-4);
+}
+
+.mb-8 {
+    margin-bottom: var(--mb-8);
+}
+
+.mb-16 {
+    margin-bottom: var(--mb-16);
+}
+
+.mb-12 {
+    margin-bottom: var(--mb-12);
+}
+
+.mb-24 {
+    margin-bottom: var(--mb-24);
+}
+
+.mb-32 {
+    margin-bottom: var(--mb-32);
+}
+
+.mb-40 {
+    margin-bottom: var(--mb-40);
+}
+
+.mb-64 {
+    margin-bottom: var(--mb-64);
+}
+
+.mb-92 {
+    margin-bottom: var(--mb-92);
+}
+
+.ml-12 {
+    margin-left: var(--ml-12);
+}
+
+
+/* =========================================================
+    Scroll Style
+==========================================================*/
+
+input,
+textarea {
+    border-radius: var(--bd-radius-16);
+    border: 1px solid #303030;
+    font-size: var(--fs-24);
+    padding: 8px 12px;
+    text-align: right;
+    background-color: var(--secondary-color);
+    font-weight: var(--fw-700);
+}
+
+textarea {
+    max-height: 160px;
+}
+
+label {
+    font-size: 24px;
+}
+
+
+.flag {
+    position: relative;
+    display: inline-block;
+
+}
+
+.flag:before {
+    content: url(../img/irflag.png);
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    left: 20px;
+    height: 23px;
+    z-index: 2;
+    bottom: 36px;
+}
+
+.d-f {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.pw label {
+    display: inline-block;
+    width: 18%;
+    min-width: 268px;
+}
+
+.pw input,
+textarea {
+    width: 48%;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .pw input,
+    textarea {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .fs-64 {
+        font-size: var(--fs-40);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* footer .fs-40 {
+        font-size: var(--fs-24);
+    } */
+
+    .pw input,
+    textarea {
+        width: 100%;
+    }
+
+    .d-f {
+        margin-bottom: var(--mb-12);
+    }
+
+    .ml-12.f-btitr {
+        margin-bottom: var(--mb-4);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .fs-64 {
+        font-size: var(--fs-32);
+    }
+
+    body {
+        padding-inline: 12px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .fs-64 {
+        font-size: var(--fs-24);
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .d-f {
+        width: 22%;
+    }
+
+    .pw input,
+    textarea {
+        width: 48%;
+    }
+}
+
+header {
+    background-image: url("../img/VectorSmartObject.png");
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-image: url("../img/VectorSmartObject1.png");
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 120px;
+}
+
+h1 {
+    font-weight: var(--fw-900);
+}
