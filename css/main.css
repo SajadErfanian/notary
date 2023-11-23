@@ -208,7 +208,7 @@ select {
     text-align: right;
     background-color: var(--secondary-color);
     font-weight: var(--fw-700);
-    height: 55px !important;
+    height: 55px;
 }
 
 textarea {
@@ -268,7 +268,6 @@ textarea {
 
 select {
     min-width: 311px;
-    height: 60px;
     -moz-appearance: none;
     /* Firefox */
     -webkit-appearance: none;
