@@ -399,15 +399,17 @@ select {
         margin-bottom: var(--space-4);
     }
 
-    .address {
-        display: inline-block;
-    }
+
 }
 
 @media screen and (max-width: 637px) {
-    .address {
+
+    /* .address {
         flex-direction: column;
         align-items: start;
+    } */
+    .address {
+        display: inline-block;
     }
 }
 
