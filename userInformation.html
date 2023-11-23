@@ -17,54 +17,50 @@
             <img src="./img/logo.png" alt="logo" width="160px">
         </div>
         <h2 class="f-btitr text-center fs-64 mb-92 color-p">دفتر اسناد رسمی </h2>
-        <form action="">
+        <form class="info" action="">
             <div class="mb-40 top">
-                <span class="flag d-f ml-12">
-                    <label class="f-btitr mb-4" for="">استــان</label>
-                    <select name="pets" id="pet-select" class="f-btitr color-p">
-                        <option value="tehran" class="f-btitr color-p">تهران</option>
-                        <option value="tehran" class="f-btitr color-p">1 تهران </option>
-                    </select>
-                </span>
-                <span class="d-f ml-12">
-                    <label class="f-btitr mb-4" for="">شهــر</label>
-                    <select name="pets" id="pet-select" class="f-btitr color-p">
-                        <option value="tehran" class="f-btitr color-p">تهران</option>
-                        <option value="tehran" class="f-btitr color-p">1 تهران </option>
-                    </select>
-                </span>
-                <span class="d-f">
-                    <label class="f-btitr mb-4" for="">شماره</label>
-                    <input class="f-btitr color-p " type="number">
-                </span>
+                <div class="pw fullname-assistance mb-24">
+                    <label class="ml-12 f-btitr" for="">استان:</label>
+                    <input class="f-bkoodak" type="text" disabled value="مقدار تستی">
+                </div>
+                <div class="pw fullname-assistance mb-24">
+                    <label class="ml-12 f-btitr" for="">شهر:</label>
+                    <input class="f-bkoodak" type="text" disabled value="مقدار تستی">
+                </div>
+                <div class="pw fullname-assistance mb-24">
+                    <label class="ml-12 f-btitr" for="">شماره:</label>
+                    <input class="f-bkoodak" type="text" disabled value="1234567891011">
+
+                </div>
             </div>
             <div class="pw fullname-assistance mb-24">
                 <label class="ml-12 f-btitr" for="">نام و نام خانوادگی سردفتر:</label>
-                <input class="f-bkoodak" type="text">
+                <input class="f-bkoodak" type="text" disabled value="مقدار تستی">
             </div>
             <div class="pw fullname-assistant mb-24">
                 <label class="ml-12 f-btitr" for="">نام و نام خانوادگی دفتریاراول:</label>
-                <input class="f-bkoodak" type="text">
+                <input class="f-bkoodak" type="text" disabled value="مقدار تستی">
             </div>
             <div class="pw fullname-assistant-2 mb-24">
                 <label class="ml-12 f-btitr" for="">نام و نام خانوادگی دفتریاردوم:</label>
-                <input class="f-bkoodak" type="text">
+                <input class="f-bkoodak" type="text" disabled value="مقدار تستی">
             </div>
             <div class="pw fullname-Sponsor mb-24">
                 <label class="ml-12 f-btitr" for="">نام و نام خانوادگی کفیل:</label>
-                <input class="f-bkoodak" type="text">
+                <input class="f-bkoodak" type="text" disabled value="مقدار تستی">
             </div>
             <div class="pw address mb-24">
                 <label class="ml-12 f-btitr" for="">آدرس:</label>
-                <textarea class="f-bkoodak" name="" id="" cols="30" rows="10"></textarea>
+                <textarea id="myTextarea" class="f-bkoodak" disabled></textarea>
+                <script>document.getElementById("myTextarea").value = "مقدار تستی";</script>
             </div>
             <div class="pw phonenumber-office mb-24">
                 <label class="ml-12 f-btitr" for="">شماره تماس دفترخانه:</label>
-                <input class="f-bkoodak" type="number">
+                <input class="f-bkoodak" type="text" disabled value="1234567891011">
             </div>
             <div class="pw phonenumber-Sponso mb-24r">
                 <label class="ml-12 f-btitr" for="">شماره تماس کفیل:</label>
-                <input class="f-bkoodak" type="number">
+                <input class="f-bkoodak" type="text" disabled value="1234567891011">
             </div>
         </form>
     </main>
