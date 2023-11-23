@@ -191,7 +191,8 @@ body {
 ==========================================================*/
 
 input,
-textarea {
+textarea,
+select {
     border-radius: var(--bd-radius-16);
     border: 1px solid #303030;
     font-size: var(--fs-24);
@@ -254,12 +255,38 @@ textarea {
     width: 48%;
 }
 
+select {
+    min-width: 311px;
+    height: 60px;
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.address label {
+    margin-left: 15px;
+}
+
+.address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 @media screen and (max-width: 1024px) {
 
     .pw input,
     textarea {
         width: 50%;
+    }
+
+    .top span {
+        margin-bottom: 24px;
     }
 }
 
@@ -270,10 +297,15 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+    .address {
+        flex-direction: column;
+        align-items: start;
+    }
 
     /* footer .fs-40 {
         font-size: var(--fs-24);
     } */
+
 
     .pw input,
     textarea {
@@ -304,6 +336,10 @@ textarea {
         font-size: var(--fs-32);
     }
 
+    h2 {
+        font-size: var(--fs-40) !important;
+    }
+
 }
 
 @media screen and (max-width: 540px) {
@@ -311,6 +347,16 @@ textarea {
         font-size: var(--fs-24);
     }
 
+}
+
+@media screen and (max-width: 360px) {
+    .ml-12 {
+        margin-left: 0;
+    }
+
+    .top span {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1440px) {
