@@ -9,6 +9,41 @@
 </head>
 
 <body>
+    <div class="custom-model-main">
+        <div class="custom-model-inner">
+            <div class="close-btn">×</div>
+            <div class="custom-model-wrap">
+                <div class="pop-up-content-wrap">
+
+                    <table class="table">
+                        <thead>
+                            <th class="f-btitr">ردیف</th>
+                            <th class="f-btitr">نام</th>
+                            <th class="f-btitr">نام خانوادگی</th>
+                            <th class="f-btitr">استــان</th>
+                            <th class="f-btitr">شهــر</th>
+                            <th class="f-btitr">شماره دفترخانه</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="f-bkoodak" data-label="ردیف :"><span class="nom">1</span></td>
+                                <td class="f-bkoodak" data-label="نام :"><span class="name">حاج</span></td>
+                                <td class="f-bkoodak" data-label="نام خانوادگی :"><span class="lname">زنبور عسل</span>
+                                </td>
+                                <td class="f-bkoodak" data-label="استــان :"><span class="state">تهران</span></td>
+                                <td class="f-bkoodak" data-label="شهر :"><span class="city">تهران</span></td>
+                                <td class="f-bkoodak" data-label="شماره دفترخانه :"><span
+                                        class="phonenumber">09080993534</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div class="bg-overlay"></div>
+    </div>
     <header>
         <h3 class="f-kaghaz text-center fs-64 mb-64 color-light">جستجوی دفاتر اسناد رسمی</h3>
     </header>
@@ -17,7 +52,7 @@
             <img src="./img/logo.png" alt="logo" width="160px">
         </div>
         <h2 class="f-btitr text-center fs-64 mb-92 color-p">جستجوی دفاتر اسناد رسمی</h2>
-        <form action="./register.html">
+        <form>
             <div class="pw fullname-assistance mb-24">
                 <label class="f-btitr" for="">نام:</label>
                 <input class="f-bkoodak" type="text">
@@ -48,14 +83,17 @@
                 </select>
             </div>
             <div class="mt-92 text-center">
-                <button type="submit" formaction="./userInformation.html"><img width="200" src="./img/Group1.png"
-                        alt=""></button>
+                <button class="Click-here" type="submit"><img width="200" src="./img/Group1.png" alt=""></button>
             </div>
         </form>
     </main>
     <footer>
         <h3 class="f-kaghaz text-center fs-64 color-light">notary.ir</h3>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>
