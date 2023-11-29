@@ -389,6 +389,11 @@ h1 {
     background: #1f1f1f
 }
 
+.img-box {
+    border-radius: 12px;
+    ;
+}
+
 input,
 textarea,
 select {
