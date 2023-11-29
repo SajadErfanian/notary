@@ -389,10 +389,11 @@ h1 {
     background: #1f1f1f
 }
 
-.img-box {
+.img-box img {
     border-radius: 12px;
-    ;
+
 }
+
 
 input,
 textarea,
