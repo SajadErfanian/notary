@@ -238,15 +238,16 @@ function displayCart() {
     var output = "";
     for (var i in cartArray) {
         output += "<tr>"
-            + "<td>" + cartArray[i].name + "</td>"
-            + "<td>(" + cartArray[i].price + ")</td>"
-            + "<td><div class='input-group'>"
+            + '<td class="align-middle">Colorful Stylish Shirt</td>'
+            + '<td class="align-middle">' + cartArray[i].price + '</td>'
+            + '<td class="align-middle">'
             + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-            + "</div></td>"
-            + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">x</button></td>"
-            + " = "
-            + "<td>" + cartArray[i].total + "</td>"
+            + '</td>'
+            + '<td>' + '<div class="grand-total">Total price: ₹<span class="total-cart"></span></div>' + '</td>'
+
+            + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
             + "</tr>";
+
     }
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
