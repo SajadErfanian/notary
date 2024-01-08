@@ -6080,8 +6080,9 @@ a.close.disabled {
 
 @media (min-width: 576px) {
     .modal-dialog {
-        max-width: 500px;
-        margin: 1.75rem auto
+        max-width: fit-content;
+        margin-inline: auto;
+        min-width: 300px;
     }
 
     .modal-dialog-scrollable {
