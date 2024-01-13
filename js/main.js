@@ -243,7 +243,7 @@ function displayCart() {
             + '<td class="align-middle">'
             + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
             + '</td>'
-            + '<td>' + '<div class="grand-total">Total price: ₹<span class="total-cart"></span></div>' + '</td>'
+            + '<td>' + '<div class="grand-total">Total price: $ <span class="total-cart"></span></div>' + '</td>'
 
             + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
             + "</tr>";

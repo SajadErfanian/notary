@@ -674,6 +674,13 @@ pre code {
   }
 }
 
+@media (min-width: 992px) {
+  .mw-311 a {
+    max-width: 311px;
+  }
+}
+
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -10755,4 +10762,17 @@ a.text-dark:focus {
   100% {
     transform: translateY(-15px);
   }
+}
+
+.total-cart {
+  display: inline-block;
+  min-width: 36px;
+}
+
+.product-item .btn.border {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  border: none !important;
+  background: #e8e8e8;
 }
